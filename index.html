@@ -224,12 +224,12 @@ var _hmt = _hmt || [];
 <p>2.安装Node.js<br>官方下载地址：<a href="https://nodejs.org/。" target="_blank" rel="external">https://nodejs.org/。</a></p>
 <p>3.安装Hexo<br>在终端执行命令：<code>sudo npm install -g hexo</code>，安装成功。</p>
 <p>4.本地博客查看<br>创建网站所需的目标文件夹（名字任意），在终端输入<code>cd /文件夹路径</code>就可以在该目录下执行命令。继续执行命令：<code>hexo init</code>和<code>npm install</code>，本地的Hexo博客搭建完成。再执行命令：<code>hexo g</code>和<code>hexo s</code>，就可以在浏览器输入<a href="http://localhost:4000查看效果。" target="_blank" rel="external">http://localhost:4000查看效果。</a></p>
-<p>5.在GitHub创建repository<br>到<a href="http://www.github.com注册账号，创建new" target="_blank" rel="external">http://www.github.com注册账号，创建new</a> repository，Repository name一定要和用户名相同。比如用户名是<code>yourname</code>，那么Repository name就填<code>yourname.github.io</code>。</p>
+<p>5.在GitHub创建repository<br>到<a href="http://www.github.com" target="_blank" rel="external">http://www.github.com </a>注册账号，创建new repository，Repository name一定要和用户名相同。比如用户名是<code>yourname</code>，那么Repository name就填<code>yourname.github.io</code>。</p>
 <p>6.设置Git的user.name和user.email<br>在终端执行命令：<code>npm install hexo-deployer-git --save</code>，第一次使用Git时，你需要告诉你的协同开发者，你是谁以及你的邮箱，再通过以下2个命令设置个人信息：<code>git config --global user.name xxx</code>和<code>git config --global user.email xxx@xx.com</code>，这里的name和mail与github完全无关。</p>
 <p>7.配置SSH keys<br>在终端执行命令：<code>ssh-keygen -t rsa -C 邮件地址</code>，邮件为你github账号，直接回车就好，密码为空。新建Finder窗口按下cmd+shift+G，输入<code>~/.ssh</code>，找到id_rsa.pub文件，用文本打开复制里面的代码。打开GitHub的setting界面，点击Add SSH key，将复制的代码粘贴进去，Title随便填写。</p>
 <p>8.修改_config.yml<br>编辑博客目录下的_config.yml，修改Deployment部分：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repository: https://github.com/yourname/yourname.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
 <p>9.部署<br>在终端执行命令：<code>hexo d</code>，根据提示输入Github用户名和密码，完成部署。</p>
-<p>10.访问测试<br>在浏览器访问<a href="http://yourname.github.io，就可以看到自己的博客啦！" target="_blank" rel="external">http://yourname.github.io，就可以看到自己的博客啦！</a></p>
+<p>10.访问测试<br>在浏览器访问<a href="http://yourname.github.io" target="_blank" rel="external">http://yourname.github.io</a>，就可以看到自己的博客啦！</p>
 <p>到此Hexo的基础博客已经搭建完毕，后续可根据个人需求来安装主题和插件，我将在下一篇中详述。</p>
 <hr>
 <p>Tips: 务必按照这个流程来搭建和部署。这次踩过Hexo的3大坑，这辈子都不会忘记。</p>
