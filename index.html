@@ -195,35 +195,60 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Hello-Hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/18/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/05/19/Hello-Hexo/">Hello Hexo丨使用Hexo+Github搭建自己的博客</a>
     </h1>
   
 
         
-        <a href="/2017/05/18/hello-world/" class="archive-article-date">
-  	<time datetime="2017-05-18T05:36:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-18</time>
+        <a href="/2017/05/19/Hello-Hexo/" class="archive-article-date">
+  	<time datetime="2017-05-19T14:12:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>明明1个小时就可以建好的博客，这次上手操作却花了3天。每天都会遇奇葩的bug，庆幸自己能将它们一一击破。</p>
+<p>我不懂代码，只知道Hexo+Github搭的博客很好用。大概去年这个时候，在某个朋友的介绍下，初次了解到Hexo,在他的协助下完成了部署，后续的主题、插件和域名都是我自己摸索着完成的。</p>
+<p>其次这个博客早就想搞了，可惜一直忙于工作和换服的琐事，现在离职后才静下心来操它。<a href="http://thebravelegend.com/">thebravelegend.com</a>是在2016年12月31日申请的域名，我称之为<code>勇者传说</code>，寓意17年的新人生，用来记录东京生活的点滴。说来有点惭愧啊，半年后才将它用上。</p>
+<p>前戏差不了，咱们切入正题，说说这次在搭建Hexo中遇到的问题：1、无法deploy到Github；2、部署成功后打开网站404；3、绑定域名后打开网站空白。3天踩了3个坑，真让人累觉不爱啊，至于避免和解决的方法，将在下面搭建教程中提到。</p>
+<p><strong>本文高潮部分，如何正确用Hexo搭建博客？我是在Mac环境下操作的，仅供参考！</strong></p>
+<ol>
+<li><p>安装Git<br>在AppStore下载安装Xcode即可。</p>
+</li>
+<li><p>安装Node.js<br>官方下载地址：<a href="https://nodejs.org/。" target="_blank" rel="external">https://nodejs.org/。</a></p>
+</li>
+<li><p>安装Hexo<br>在终端执行命令：<code>sudo npm install -g hexo</code>，安装成功。</p>
+</li>
+<li><p>本地博客查看<br>创建网站所需的目标文件夹（名字任意），在终端输入<code>cd /文件夹路径</code>就可以在该目录下执行命令。继续执行命令：<code>hexo init</code>和<code>npm install</code>，本地的Hexo博客搭建完成。再执行命令：<code>hexo g</code>和<code>hexo s</code>，就可以在浏览器输入<a href="http://localhost:4000查看效果。" target="_blank" rel="external">http://localhost:4000查看效果。</a></p>
+</li>
+<li><p>在GitHub创建repository<br>到<a href="http://www.github.com注册账号，创建new" target="_blank" rel="external">http://www.github.com注册账号，创建new</a> repository，Repository name一定要和用户名相同。比如用户名是<code>yourname</code>，那么Repository name就填<code>yourname.github.io</code>。</p>
+</li>
+<li><p>设置Git的user.name和user.email<br>在终端执行命令：<code>npm install hexo-deployer-git --save</code>，第一次使用Git时，你需要告诉你的协同开发者，你是谁以及你的邮箱，再通过以下2个命令设置个人信息：<code>git config --global user.name xxx</code>和<code>git config --global user.email xxx@xx.com</code>，这里的name和mail与github完全无关。</p>
+</li>
+<li><p>配置SSH keys<br>在终端执行命令：<code>ssh-keygen -t rsa -C 邮件地址</code>，邮件为你github账号，直接回车就好，密码为空。新建Finder窗口按下cmd+shift+G，输入<code>~/.ssh</code>，找到id_rsa.pub文件，用文本打开复制里面的代码。打开GitHub的setting界面，点击Add SSH key，将复制的代码粘贴进去，Title随便填写。</p>
+</li>
+<li><p>修改_config.yml<br>编辑博客目录下的_config.yml，修改Deployment部分：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repository: https://github.com/yourname/yourname.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure>
+</li>
+<li><p>部署<br>在终端执行命令：<code>hexo d</code>，根据提示输入Github用户名和密码，完成部署。</p>
+</li>
+<li><p>访问测试<br>在浏览器访问<a href="http://yourname.github.io，就可以看到自己的博客啦！" target="_blank" rel="external">http://yourname.github.io，就可以看到自己的博客啦！</a></p>
+</li>
+</ol>
+<p>到此Hexo的基础博客已经搭建完毕，后续可根据个人需求来安装主题和插件，我将在下一篇中详述。</p>
+<hr>
+<p>Tips: 务必按照这个流程来搭建和部署。这次踩过Hexo的3大坑，这辈子都不会忘记。</p>
+<p><strong>1、无法deploy到Github</strong><br>不要把github的repository克隆到博客目录，这样会导致无法deploy。</p>
+<p><strong>2、部署成功后打开网站404</strong><br>本地博客搭建好，不要急着安装主题，应该先部署到Github后再装。</p>
+<p><strong>3、绑定域名后打开网站空白</strong><br>我的域名是在Godaddy买的，用namecheap解析DNS一直打不开网站，后来换dnspod解决了这个问题。</p>
 
       
 
@@ -232,11 +257,33 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/分享/" class="article-tag-list-link color3">分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/18/hello-world/">‘阅读全文&#39; >></a>
+          <a class="article-more-a" href="/2017/05/19/Hello-Hexo/">‘阅读全文&#39; >></a>
         </p>
       
 
@@ -343,6 +390,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
